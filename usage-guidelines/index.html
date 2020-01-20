@@ -1,0 +1,1071 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3 常用类型使用规范 · .NET (C#) 编程指南</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="ROY <qqbuby@gmail.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="./" />
+    
+    
+    <link rel="prev" href="../design-guidelines-for-exceptions/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    1 命名规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../naming-guidelines/">
+            
+                <a href="../naming-guidelines/#11-大小写约定">
+            
+                    
+                    1.1 大小写约定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../naming-guidelines/">
+            
+                <a href="../naming-guidelines/#12-通用命名约定">
+            
+                    
+                    1.2 通用命名约定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../naming-guidelines/">
+            
+                <a href="../naming-guidelines/#13-程序集和-dll-的命名">
+            
+                    
+                    1.3 程序集和DLL的命名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="../naming-guidelines/">
+            
+                <a href="../naming-guidelines/#14-命名空间的命名">
+            
+                    
+                    1.4 命名空间的命名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="../naming-guidelines/">
+            
+                <a href="../naming-guidelines/#15-类、结构和接口的命名">
+            
+                    
+                    1.5 类、结构和接口的命名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="../naming-guidelines/">
+            
+                <a href="../naming-guidelines/#16-类成员的命名">
+            
+                    
+                    1.6 类成员的命名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7" data-path="../naming-guidelines/">
+            
+                <a href="../naming-guidelines/#17-参数的命名">
+            
+                    
+                    1.7 参数的命名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.8" data-path="../naming-guidelines/">
+            
+                <a href="../naming-guidelines/#18-json-的命名">
+            
+                    
+                    1.8 JSON 的命名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.9" data-path="../naming-guidelines/">
+            
+                <a href="../naming-guidelines/#19-版本号的命名">
+            
+                    
+                    1.9 版本号的命名
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../design-guidelines-for-exceptions/">
+            
+                <a href="../design-guidelines-for-exceptions/">
+            
+                    
+                    2 异常使用规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../design-guidelines-for-exceptions/">
+            
+                <a href="../design-guidelines-for-exceptions/#21-抛出异常">
+            
+                    
+                    2.1 抛出异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../design-guidelines-for-exceptions/">
+            
+                <a href="../design-guidelines-for-exceptions/#22-为抛出的异常选择合适的类型">
+            
+                    
+                    2.2 为抛出的异常选择合适的类型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../design-guidelines-for-exceptions/">
+            
+                <a href="../design-guidelines-for-exceptions/#221-错误消息的设计">
+            
+                    
+                    2.2.1 错误消息的设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../design-guidelines-for-exceptions/">
+            
+                <a href="../design-guidelines-for-exceptions/#222-异常处理">
+            
+                    
+                    2.2.2 异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../design-guidelines-for-exceptions/">
+            
+                <a href="../design-guidelines-for-exceptions/#23-自定义异常的设计">
+            
+                    
+                    2.3 自定义异常的设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../design-guidelines-for-exceptions/">
+            
+                <a href="../design-guidelines-for-exceptions/#24-异常与性能">
+            
+                    
+                    2.4 异常与性能
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    3 常用类型使用规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="./">
+            
+                <a href="./#31-数组（arrays）">
+            
+                    
+                    3.1 数组（Arrays）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="./">
+            
+                <a href="./#32-标记（attributes）">
+            
+                    
+                    3.2 标记（Attributes）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="./">
+            
+                <a href="./#33-集合（collections）">
+            
+                    
+                    3.3 集合（Collections）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="./">
+            
+                <a href="./#34-icomparablet-与-iequatablet">
+            
+                    
+                    3.4 IComparable&ltT&gt 与 IEquatable&ltT&gt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="./">
+            
+                <a href="./#35-对象（object）">
+            
+                    
+                    3.5 对象（Object）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="./">
+            
+                <a href="./#351-objectequals">
+            
+                    
+                    3.5.1 Object.Equals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="./">
+            
+                <a href="./#352-objectgethashcode">
+            
+                    
+                    3.5.2 Object.GetHashCode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="./">
+            
+                <a href="./#353-objecttostring">
+            
+                    
+                    3.5.3 Object.ToString
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="./">
+            
+                <a href="./#36-统一资源标识符-（uri）">
+            
+                    
+                    3.6 统一资源标识符 （Uri）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../dispose-pattern/">
+            
+                <a href="../dispose-pattern/">
+            
+                    
+                    4 Dispose 模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../dispose-pattern/">
+            
+                <a href="../dispose-pattern/#41-基本-dispose-模式">
+            
+                    
+                    4.1 基本 Dispose 模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../dispose-pattern/">
+            
+                <a href="../dispose-pattern/#42-可终结类型">
+            
+                    
+                    4.2 可终结类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../coding-style/">
+            
+                <a href="../coding-style/">
+            
+                    
+                    5 代码风格
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../coding-style/">
+            
+                <a href="../coding-style/#51-c-代码风格">
+            
+                    
+                    5.1 代码风格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../coding-style/">
+            
+                <a href="../coding-style/#52-文件结构">
+            
+                    
+                    5.2 文件结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../suggested-reading-list/">
+            
+                <a href="../suggested-reading-list/">
+            
+                    
+                    推荐读物
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >3 常用类型使用规范</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="31-&#x6570;&#x7EC4;&#xFF08;arrays&#xFF09;">3.1 &#x6570;&#x7EC4;&#xFF08;Arrays&#xFF09;</h2>
+<ul>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x5728;&#x516C;&#x7528;&#xFF08;public&#xFF09;API &#x4E2D;&#x4F18;&#x5148;&#x4F7F;&#x7528;&#x96C6;&#x5408;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4F18;&#x5148;&#x4F7F;&#x7528;&#x6570;&#x7EC4;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Order</span>
+  {
+      <span class="hljs-keyword">public</span> Collection&lt;OrderItem&gt; Items { <span class="hljs-keyword">get</span> { ... } }
+  }
+</code></pre>
+</li>
+<li><p><strong>X DO NOT</strong> &#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x53EA;&#x8BFB;&#x7684;&#x6570;&#x7EC4;&#x5B57;&#x6BB5;&#x3002;&#x867D;&#x7136;&#x5B57;&#x6BB5;&#x672C;&#x8EAB;&#x662F;&#x53EA;&#x8BFB;&#x7684;&#xFF0C;&#x7528;&#x6237;&#x4E0D;&#x80FD;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF0C;&#x4F46;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x6570;&#x7EC4;&#x7684;&#x5143;&#x7D20;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-keyword">public</span> <span class="hljs-keyword">sealed</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Path</span>
+  {
+      <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">readonly</span> <span class="hljs-keyword">char</span>[] InvalidPathChars =
+          { <span class="hljs-string">&apos;\&quot;&apos;</span>, <span class="hljs-string">&apos;&lt;&apos;</span>, <span class="hljs-string">&apos;&gt;&apos;</span>, <span class="hljs-string">&apos;|&apos;</span> };
+
+  }
+</code></pre>
+<p>  &#x4E8B;&#x5B9E;&#x4E0A;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x503C;&#xFF0C;&#x5C31;&#x50CF;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#xFF1A;</p>
+<pre><code class="lang-cs">  Path.InvalidPathChars[<span class="hljs-number">0</span>] = <span class="hljs-string">&apos;A&apos;</span>;
+</code></pre>
+</li>
+<li><p><strong>&#x2713; CONSIDER</strong> &#x8003;&#x8651;&#x4F7F;&#x7528;&#x4E0D;&#x89C4;&#x5219;&#x6570;&#x7EC4;&#xFF08;jagged array&#xFF09;&#xFF0C;&#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x591A;&#x7EF4;&#x6570;&#x7EC4;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-comment">// jagged array</span>
+  <span class="hljs-keyword">int</span>[][] jaggedArray = {
+      <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[] { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span> },
+      <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[] { <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span> },
+      <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[] { <span class="hljs-number">8</span> },
+      <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[] { <span class="hljs-number">9</span> },
+  };
+
+  <span class="hljs-comment">// multidimensional arrays</span>
+  <span class="hljs-keyword">int</span>[,] multiDimArray = {
+      { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span> },
+      { <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">0</span> },
+      { <span class="hljs-number">8</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span> },
+      { <span class="hljs-number">9</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span> },
+  };
+</code></pre>
+</li>
+</ul>
+<h2 id="32-&#x6807;&#x8BB0;&#xFF08;attributes&#xFF09;">3.2 &#x6807;&#x8BB0;&#xFF08;Attributes&#xFF09;</h2>
+<p>&#x6807;&#x8BB0;&#xFF08;attribute&#xFF09;&#x662F;&#x4E00;&#x79CD;&#x6CE8;&#x89E3;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x5404;&#x79CD;&#x7F16;&#x7A0B;&#x5143;&#x7D20;&#xFF0C;&#x6BD4;&#x5982;&#x7A0B;&#x5E8F;&#x96C6;&#x3001;&#x7C7B;&#x578B;&#x3001;&#x6210;&#x5458;&#x3001;&#x53C2;&#x6570;&#x3002;&#x5B83;&#x4EEC;&#x5B58;&#x50A8;&#x5728;&#x7A0B;&#x5E8F;&#x96C6;&#x7684;&#x5143;&#x6570;&#x636E;&#x4E2D;&#xFF0C;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x53CD;&#x5C04; API &#x6765;&#x8BBF;&#x95EE;&#x3002;</p>
+<ul>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x5728;&#x547D;&#x540D;&#x81EA;&#x5B9A;&#x4E49; attribute &#x7C7B;&#x65F6;&#x6DFB;&#x52A0;&#x201C;Attribute&#x201D;&#x540E;&#x7F00;&#x3002;</p>
+</li>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x5728;&#x81EA;&#x5B9A;&#x4E49;&#x7684; attribute &#x65F6;&#x4F7F;&#x7528; <code>AttributeUsageAttribute</code>&#x3002;</p>
+</li>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x4E3A;&#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF08;optional property, &#x6216; optional argument&#xFF09;&#x63D0;&#x4F9B;&#x53EF;&#x8BBE;&#x7F6E;&#x7684;&#x5C5E;&#x6027;&#xFF08;Property&#xFF09;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">NameAttribute</span> : <span class="hljs-title">Attribute</span>
+  {
+      ...
+      <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> Age { <span class="hljs-keyword">get</span> { ... } <span class="hljs-keyword">set</span> { ... } } <span class="hljs-comment">// optional argument</span>
+  }
+</code></pre>
+</li>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x4E3A;&#x5FC5;&#x586B;&#x53C2;&#x6570;&#xFF08;required property &#x6216; required argument&#xFF09;&#x63D0;&#x4F9B;&#x53EA;&#x8BFB;&#x5C5E;&#x6027;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">NameAttribute</span> : <span class="hljs-title">Attribute</span>
+  {
+      <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">NameAttribute</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> userName</span>) </span>{ ... } <span class="hljs-comment">// required argument</span>
+      <span class="hljs-keyword">public</span> <span class="hljs-keyword">string</span> UserName { <span class="hljs-keyword">get</span> { ... } }
+      ...
+  }
+</code></pre>
+</li>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x63D0;&#x4F9B;&#x6784;&#x9020;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x6765;&#x5BF9;&#x5FC5;&#x586B;&#x53C2;&#x6570;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#x3002;&#x6BCF;&#x4E2A;&#x53C2;&#x6570;&#x5E94;&#x8BE5;&#x4E0E;&#x76F8;&#x540C;&#x7684;&#x5C5E;&#x6027;&#x540D;&#x76F8;&#x540C;&#xFF08;&#x867D;&#x7136;&#x5927;&#x5C0F;&#x5199;&#x4F1A;&#x4E0D;&#x540C;&#xFF09;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">NameAttribute</span> : <span class="hljs-title">Attribute</span>
+  {
+      <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">NameAttribute</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> userName</span>) </span>{ ... } <span class="hljs-comment">// required argument</span>
+      <span class="hljs-keyword">public</span> <span class="hljs-keyword">string</span> UserName { <span class="hljs-keyword">get</span> { ... } } <span class="hljs-comment">// required argument</span>
+      ...
+  }
+</code></pre>
+</li>
+<li><p><strong>X AVOID</strong> &#x907F;&#x514D;&#x63D0;&#x4F9B;&#x6784;&#x9020;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x6765;&#x5BF9;&#x4E0E;&#x53EF;&#x9009;&#x53C2;&#x6570;&#x5BF9;&#x5E94;&#x7684;&#x5C5E;&#x6027;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-comment">// bad design</span>
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">NameAttribute</span> : <span class="hljs-title">Attribute</span>
+  {
+      <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">NameAttribute</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> userName</span>) </span>{ ... } <span class="hljs-comment">// required argument</span>
+      <span class="hljs-keyword">public</span> <span class="hljs-keyword">string</span> UserName { <span class="hljs-keyword">get</span> { ... } <span class="hljs-keyword">set</span> { ... } } <span class="hljs-comment">// optional argument</span>
+      ...
+  }
+</code></pre>
+</li>
+<li><p><strong>X AVOID</strong> &#x907F;&#x514D;&#x5BF9;&#x81EA;&#x5B9A;&#x4E49; attribute &#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x8FDB;&#x884C;&#x91CD;&#x8F7D;&#xFF08;overload&#xFF09;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-comment">// bad design</span>
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">NameAttribute</span> : <span class="hljs-title">Attribute</span>
+  {
+      <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">NameAttribute</span>(<span class="hljs-params"></span>) </span>{ ... }
+      <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">NameAttribute</span>(<span class="hljs-params">...</span>) </span>{ ... }
+      ...
+  }
+</code></pre>
+</li>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x5C3D;&#x53EF;&#x80FD;&#x5C06;&#x81EA;&#x5B9A;&#x4E49; attribute &#x7C7B;&#x5BC6;&#x5C01;&#xFF08;sealed&#xFF09;&#x8D77;&#x6765;&#x3002;&#x8FD9;&#x6837;&#x4F1A;&#x4F7F;&#x67E5;&#x627E; attribute &#x66F4;&#x5FEB;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-keyword">public</span> <span class="hljs-keyword">sealed</span> <span class="hljs-keyword">class</span> <span class="hljs-title">NameAttribute</span> : <span class="hljs-title">Attribute</span> { ... }
+</code></pre>
+</li>
+</ul>
+<h2 id="33-&#x96C6;&#x5408;&#xFF08;collections&#xFF09;">3.3 &#x96C6;&#x5408;&#xFF08;Collections&#xFF09;</h2>
+<ul>
+<li><p><strong>X DO NOT</strong> &#x4E0D;&#x8981;&#x5728;&#x516C;&#x7528; API &#x4E2D;&#x4F7F;&#x7528;&#x5F31;&#x7C7B;&#x578B;&#x96C6;&#x5408;&#x3002;</p>
+<p>  &#x5982;&#x679C;&#x8FD4;&#x56DE;&#x503C;&#x548C;&#x53C2;&#x6570;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x96C6;&#x5408;&#x5143;&#x7D20;&#xFF0C;&#x90A3;&#x4E48;&#x5176;&#x7C7B;&#x578B;&#x5E94;&#x8BE5;&#x4E0E;&#x5143;&#x7D20;&#x7C7B;&#x578B;&#x5B8C;&#x5168;&#x4E00;&#x81F4;&#xFF0C;&#x800C;&#x4E0D;&#x5E94;&#x8BE5;&#x662F;&#x5143;&#x7D20;&#x7C7B;&#x578B;&#x7684;&#x4EFB;&#x4F55;&#x57FA;&#x7C7B;&#xFF08;&#x8FD9;&#x53EA;&#x9002;&#x5408;&#x4E0E;&#x96C6;&#x5408;&#x7684;&#x516C;&#x7528;&#x6210;&#x5458;&#xFF09;&#x4F8B;&#x5982;&#xFF0C;&#x5B58;&#x50A8; <code>Component</code> &#x7684;&#x96C6;&#x5408;&#x4E0D;&#x5E94;&#x8BE5;&#x63D0;&#x4F9B;&#x4EE5; <code>object</code> &#x4E3A;&#x53C2;&#x6570;&#x7684;&#x516C;&#x7528; <code>Add</code> &#x65B9;&#x6CD5;&#xFF0C;&#x6216;&#x4EE5; <code>IComponent</code> &#x4E3A;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x516C;&#x7528;&#x7D22;&#x5F15;&#x5668;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-comment">// bad desgin</span>
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">ComponentDesigner</span>
+  {
+      <span class="hljs-keyword">public</span> IList Components { <span class="hljs-keyword">get</span> { ... } }
+  }
+
+  <span class="hljs-comment">// good desgin</span>
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">ComponentDesigner</span>
+  {
+      <span class="hljs-keyword">public</span> Collection&lt;Component&gt; Components { <span class="hljs-keyword">get</span> { ... } }
+      ...
+  }
+</code></pre>
+</li>
+<li><p><strong>X DO NOT</strong> &#x4E0D;&#x8981;&#x5728;&#x516C;&#x7528; API &#x4E2D;&#x4F7F;&#x7528; <code>ArrayList</code> &#x6216; <code>List&lt;T&gt;</code>&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-comment">// bad desgin</span>
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Order</span>
+  {
+      <span class="hljs-keyword">public</span> List&lt;OrderItem&gt; Items { <span class="hljs-keyword">get</span> { ... } }
+      ...
+  }
+
+  <span class="hljs-comment">// good desgin</span>
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Order</span>
+  {
+      <span class="hljs-keyword">public</span> Collection&lt;OrderItem&gt; Items { <span class="hljs-keyword">get</span> { ... } }
+      ...
+  }
+</code></pre>
+</li>
+<li><p><strong>X DO NOT</strong> &#x4E0D;&#x8981;&#x5728;&#x516C;&#x7528; API &#x4E2D;&#x4F7F;&#x7528; <code>HashTable</code> &#x6216;&#x8005; <code>Dictionary&lt;TKey, TValue&gt;</code>&#x3002;</p>
+</li>
+</ul>
+<ul>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x7528;&#x6700;&#x6CDB;&#x7684;&#x7C7B;&#x578B;&#xFF08;&#x5373;&#x7EE7;&#x627F;&#x5C42;&#x6B21;&#x4E2D;&#x6700;&#x9760;&#x8FD1;&#x57FA;&#x7C7B;&#x7684;&#x7C7B;&#x578B;&#xFF09;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x3002;&#x5927;&#x591A;&#x6570;&#x4EE5;&#x96C6;&#x5408;&#x4E3A;&#x53C2;&#x6570;&#x7684;&#x6210;&#x5458;&#x90FD;&#x4F7F;&#x7528; <code>IEnumerable&lt;T&gt;</code> &#x63A5;&#x53E3;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">PrintNames</span>(<span class="hljs-params">IEnumerable&lt;<span class="hljs-keyword">string</span>&gt; names</span>)
+  </span>{
+      <span class="hljs-keyword">foreach</span> (<span class="hljs-keyword">var</span> name <span class="hljs-keyword">in</span> names)
+      {
+          Console.WriteLine(name);
+      }
+  }
+</code></pre>
+</li>
+<li><p><strong>X AVOID</strong> &#x907F;&#x514D;&#x4F7F;&#x7528; <code>ICollection&lt;T&gt;</code> &#x6216; <code>ICollection</code> &#x6765;&#x505A;&#x53C2;&#x6570;&#xFF0C;&#x5982;&#x679C;&#x5176;&#x76EE;&#x7684;&#x4EC5;&#x4EC5;&#x662F;&#x4E3A;&#x4E86;&#x8BBF;&#x95EE;&#x8BE5;&#x63A5;&#x53E3;&#x7684; <code>Count</code> &#x5C5E;&#x6027;&#x3002;</p>
+</li>
+<li><p><strong>X DO NOT</strong> &#x4E0D;&#x8981;&#x63D0;&#x4F9B;&#x53EF;&#x8BBE;&#x7F6E;&#x7684;&#x96C6;&#x5408;&#x5C5E;&#x6027;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-comment">// bad desgin</span>
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Order</span>
+  {
+      <span class="hljs-keyword">public</span> Collection&lt;OrderItem&gt; Items { <span class="hljs-keyword">get</span> { ... } <span class="hljs-keyword">set</span> { ... } }
+      ...
+  }
+
+  <span class="hljs-comment">// good desgin</span>
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Order</span>
+  {
+      <span class="hljs-keyword">public</span> Collection&lt;OrderItem&gt; Items { <span class="hljs-keyword">get</span> { ... } }
+      ...
+  }
+</code></pre>
+</li>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x7528; <code>Collection&lt;T&gt;</code>&#x6216;&#x5176;&#x5B50;&#x7C7B;&#x4F5C;&#x4E3A;&#x5C5E;&#x6027;&#x6216;&#x8FD4;&#x56DE;&#x503C;&#x6765;&#x8868;&#x793A;&#x53EF;&#x8BFB;&#x5199;&#x7684;&#x96C6;&#x5408;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-keyword">public</span> Collection&lt;Session&gt; Sessions { <span class="hljs-keyword">get</span>; }
+</code></pre>
+</li>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x7528; <code>ReadOnlyCollection&lt;T&gt;</code> &#x6216;&#x5176;&#x5B50;&#x7C7B;&#x4F5C;&#x4E3A;&#x5C5E;&#x6027;&#x6216;&#x8FD4;&#x56DE;&#x503C;&#x6765;&#x8868;&#x793A;&#x53EA;&#x8BFB;&#x96C6;&#x5408;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-keyword">public</span> ReadOnlyCollection&lt;Session&gt; Sessions { <span class="hljs-keyword">get</span>; }
+</code></pre>
+</li>
+<li><p><strong>X DO NOT</strong> &#x4E0D;&#x8981;&#x4ECE;&#x96C6;&#x5408;&#x5C5E;&#x6027;&#x6216;&#x8005;&#x96C6;&#x5408;&#x4E3A;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x65B9;&#x6CD5;&#x4E2D;&#x8FD4;&#x56DE; <code>null</code>&#x3002;&#x66FF;&#x4EE3;&#x65B9;&#x6CD5;&#x662F;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x7A7A;&#x96C6;&#x5408;&#x6216;&#x8005;&#x7A7A;&#x6570;&#x7EC4;&#x3002;</p>
+<blockquote>
+<p>&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;&#x5E94;&#x8BE5;&#x4EE5;&#x76F8;&#x540C;&#x7684;&#x65B9;&#x5F0F;&#x5904;&#x7406; <code>null</code> &#x548C; &#x7A7A;&#x96C6;&#x5408;&#xFF08;&#x5143;&#x7D20;&#x6570;&#x91CF;&#x4E3A;&#x96F6;&#xFF09;&#x6216;&#x7A7A;&#x6570;&#x7EC4;&#x3002;</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="34-icomparablet-&#x4E0E;-iequatablet">3.4 IComparable&lt;T&gt; &#x4E0E; IEquatable&lt;T&gt;</h2>
+<p><code>IComparable&lt;T&gt;</code> &#x548C; <code>IEquatable&lt;T&gt;</code> &#x90FD;&#x80FD;&#x7528;&#x6765;&#x5BF9;&#x5BF9;&#x8C61;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#xFF0C;&#x524D;&#x63D0;&#x662F;&#x5BF9;&#x8C61;&#x5FC5;&#x987B;&#x5B9E;&#x73B0;&#x8FD9;&#x4E24;&#x4E2A;&#x63A5;&#x53E3;&#x3002;<code>IComparable&lt;T&gt;</code> &#x6BD4;&#x8F83;&#x7684;&#x662F;&#x987A;&#x5E8F;&#xFF08;&#x5C0F;&#x4E8E;&#x3001;&#x7B49;&#x4E8E;&#x3001;&#x5927;&#x4E8E;&#xFF09;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x6392;&#x5E8F;&#x3002;<code>IEquatable&lt;T&gt;</code> &#x6BD4;&#x8F83;&#x7684;&#x662F;&#x76F8;&#x7B49;&#x6027;&#xFF0C;<code>IComparable&lt;T&gt;</code> &#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x67E5;&#x627E;&#x3002;</p>
+<ul>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x4E3A;&#x503C;&#x7C7B;&#x578B;&#x5B9E;&#x73B0; <code>IEquatable&lt;T&gt;</code>&#x3002;</p>
+<p>  &#x503C;&#x7C7B;&#x578B;&#x7684; <code>Object.Equals</code> &#x65B9;&#x6CD5;&#x4F1A;&#x5BFC;&#x81F4;<strong>&#x88C5;&#x7BB1;</strong>&#xFF08;boxing&#xFF09;&#x64CD;&#x4F5C;&#xFF0C;&#x800C;&#x4E14;&#x56E0;&#x4E3A;&#x5B83;&#x7684;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x4F7F;&#x7528;&#x4E86;&#x53CD;&#x5C04;&#xFF0C;&#x6240;&#x4EE5;&#x6548;&#x7387;&#x4E0D;&#x9AD8;&#x3002;<code>IEquatable&lt;T&gt;</code> &#x53EF;&#x4EE5;&#x63D0;&#x4F9B;&#x597D;&#x7684;&#x591A;&#x7684;&#x6027;&#x80FD;&#xFF0C;&#x800C;&#x4E14;&#x5728;&#x5B9E;&#x73B0;&#x65F6;&#x53EF;&#x4EE5;&#x5B8C;&#x5168;&#x907F;&#x514D;&#x88C5;&#x7BB1;&#x64CD;&#x4F5C;&#x3002;</p>
+</li>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x5728;&#x5B9E;&#x73B0; <code>IEquatable&lt;T&gt;.Equals</code> &#x65F6;&#xFF0C;&#x540C;&#x65F6;&#x9075;&#x5FAA;&#x4E3A;&#x8986;&#x76D6;&#xFF08;override&#xFF09;<code>Object.Equals</code> &#x800C;&#x5236;&#x5B9A;&#x7684;&#x81EA;&#x53CD;&#x6027;&#x3001;&#x5BF9;&#x79F0;&#x6027;&#x3001;&#x4F20;&#x9012;&#x6027;&#x7B49;&#x89C4;&#x8303;&#x3002;</p>
+</li>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x5728;&#x5B9E;&#x73B0; <code>IEquatable&lt;T&gt;.Equals</code> &#x65F6;&#xFF0C;&#x540C;&#x65F6;&#x8986;&#x76D6;<code>Object.Equals</code>&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-keyword">public</span> <span class="hljs-keyword">struct</span> PostiveInt32 : IEquatable&lt;PostiveInt32&gt;
+  {
+      <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">Equals</span>(<span class="hljs-params">PostiveInt32 other</span>) </span>{ ... }
+
+      <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">Equals</span>(<span class="hljs-params"><span class="hljs-keyword">object</span> obj</span>)
+      </span>{
+          <span class="hljs-keyword">if</span> (!(obj <span class="hljs-keyword">is</span> PostiveInt32))
+          {
+              <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+          }
+
+          <span class="hljs-keyword">return</span> Equals((PostiveInt32)obj);
+      }
+  }
+</code></pre>
+</li>
+<li><p><strong>&#x2713; CONSIDER</strong> &#x8003;&#x8651;&#x5728;&#x5B9E;&#x73B0; <code>IEquatable&lt;T&gt;</code> &#x540C;&#x65F6;&#x91CD;&#x8F7D; <code>operator ==</code> &#x548C; <code>operator !=</code>&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-keyword">public</span> <span class="hljs-keyword">struct</span> Decimal : IEquatable&lt;Decimal&gt;, ...
+  {
+      <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">Equals</span>(<span class="hljs-params">Decimal other</span>) </span>{ ... }
+
+      <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">Equals</span>(<span class="hljs-params"><span class="hljs-keyword">object</span> obj</span>)
+      </span>{
+          <span class="hljs-keyword">if</span> (!(obj <span class="hljs-keyword">is</span> Decimal))
+          {
+              <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+          }
+
+          <span class="hljs-keyword">return</span> Equals((Decimal)obj);
+      }
+
+      <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">bool</span> <span class="hljs-keyword">operator</span> ==(Decimal x, Decimal y)
+      {
+          <span class="hljs-keyword">return</span> x.Equals(y);
+      }
+
+      <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">bool</span> <span class="hljs-keyword">operator</span> !=(Decimal x, Decimal y)
+      {
+          <span class="hljs-keyword">return</span> !x.Equals(y);
+      }
+  }
+</code></pre>
+</li>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x5728;&#x5B9E;&#x73B0; <code>IComparable&lt;T&gt;</code> &#x7684;&#x540C;&#x65F6;&#x5B9E;&#x73B0; <code>IEquatable&lt;T&gt;</code>&#x3002;</p>
+</li>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x5728;&#x5B9E;&#x73B0; <code>IComparable&lt;T&gt;</code> &#x7684;&#x540C;&#x65F6;&#x91CD;&#x8F7D;&#x6BD4;&#x8F83;&#x64CD;&#x4F5C;&#x7B26;&#xFF08;<code>&lt;</code>&#x3001;<code>&gt;</code>&#x3001;<code>&lt;=</code>&#x3001;<code>&gt;=</code>&#xFF09;&#x3002;</p>
+</li>
+</ul>
+<h2 id="35-&#x5BF9;&#x8C61;&#xFF08;object&#xFF09;">3.5 &#x5BF9;&#x8C61;&#xFF08;Object&#xFF09;</h2>
+<h3 id="351-objectequals">3.5.1 Object.Equals</h3>
+<p>&#x503C;&#x7C7B;&#x578B;&#x7684; <code>Object.Equals</code> &#x7684;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x662F;&#xFF0C;&#x53EA;&#x6709;&#x5F53;&#x4E24;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x6240;&#x6709;&#x5B57;&#x6BB5;&#x90FD;&#x76F8;&#x7B49;&#x65F6;&#x624D;&#x8FD4;&#x56DE; <code>true</code>&#x3002;&#x6211;&#x4EEC;&#x79F0;&#x8FD9;&#x79CD;&#x76F8;&#x5BF9;&#x4E3A;<strong>&#x503C;&#x76F8;&#x7B49;</strong>&#xFF08;value equality&#xFF09;&#x3002;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x4F7F;&#x7528;&#x4E86;&#x53CD;&#x5C04;&#x6765;&#x8BBF;&#x95EE;&#x5B57;&#x6BB5;&#xFF0C;&#x6B63;&#x56E0;&#x5982;&#x6B64;&#xFF0C;&#x5176;&#x6027;&#x80FD;&#x901A;&#x5E38;&#x65E0;&#x6CD5;&#x63A5;&#x53D7;&#xFF0C;&#x56E0;&#x6B64;&#x9700;&#x8981;&#x8986;&#x76D6;&#x3002;</p>
+<p>&#x5F15;&#x7528;&#x7C7B;&#x578B;&#x7684; <code>Object.Equals</code> &#x7684;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x662F;&#xFF0C;&#x53EA;&#x6709;&#x5F53;&#x4E24;&#x4E2A;&#x5F15;&#x7528;&#x90FD;&#x6307;&#x5411;&#x540C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x662F;&#x624D;&#x8FD4;&#x56DE; <code>true</code>&#x3002;&#x6211;&#x4EEC;&#x79F0;&#x8FD9;&#x79CD;&#x76F8;&#x5BF9;&#x4E3A;<strong>&#x5F15;&#x7528;&#x76F8;&#x7B49;</strong>&#xFF08;reference equality&#xFF09;&#x3002;&#x6709;&#x4E9B;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#x5BF9;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x8FDB;&#x884C;&#x4E86;&#x8986;&#x76D6;&#xFF0C;&#x4EE5;&#x63D0;&#x4F9B;&#x503C;&#x76F8;&#x7B49;&#x8BED;&#x4E49;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x7531;&#x4E8E;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x503C;&#x662F;&#x7531;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x5B57;&#x7B26;&#x51B3;&#x5B9A;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x4EFB;&#x4F55;&#x4E24;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x5B9E;&#x4F8B;&#x53EA;&#x8981;&#x5305;&#x542B;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x7684;&#x5B57;&#x7B26;&#x6392;&#x5217;&#xFF0C;<code>String</code> &#x7C7B;&#x7684; <code>Equals</code> &#x65B9;&#x6CD5;&#x5C31;&#x4F1A;&#x8FD4;&#x56DE; <code>true</code>&#x3002;</p>
+<ul>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x5728;&#x8986;&#x76D6;<code>Object.Equals</code> &#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x9075;&#x5FAA;&#x5B83;&#x5B9A;&#x4E49;&#x7684;&#x534F;&#x5B9A;&#x3002;</p>
+<ul>
+<li><code>x.Equals(x)</code> &#x8FD4;&#x56DE; <code>true</code>&#x3002;   // &#x81EA;&#x53CD;&#x6027;</li>
+<li><code>x.Equals(y)</code> &#x7684;&#x8FD4;&#x56DE;&#x503C;&#x4E0E; <code>y.Equals(x)</code> &#x76F8;&#x540C;&#x3002; // &#x5BF9;&#x79F0;&#x6027;</li>
+<li>&#x5982;&#x679C; <code>(x.Equals(y) &amp;&amp; y.Equals(z))</code> &#x8FD4;&#x56DE; <code>true</code>&#xFF0C;&#x90A3;&#x4E48; <code>x.Equals(z)</code> &#x5E94;&#x8BE5;&#x8FD4;&#x56DE; <code>true</code>&#x3002; // &#x4F20;&#x9012;&#x6027;</li>
+<li><code>x.Equals(null)</code> &#x5E94;&#x8BE5;&#x8FD4;&#x56DE; <code>false</code>&#x3002;</li>
+</ul>
+</li>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x5728;&#x8986;&#x76D6;<code>Object.Equals</code> &#x65B9;&#x6CD5;&#x7684;&#x540C;&#x65F6;&#xFF0C;&#x8986;&#x76D6; <code>GetHashCode</code> &#x65B9;&#x6CD5;&#x3002;</p>
+</li>
+<li><p><strong>&#x2713; CONSIDER</strong> &#x8003;&#x8651;&#x5728;&#x8986;&#x76D6;<code>Object.Equals</code> &#x65B9;&#x6CD5;&#x7684;&#x540C;&#x65F6;&#x5B9E;&#x73B0; <code>IEquatable&lt;T&gt;</code> &#x63A5;&#x53E3;&#x3002;</p>
+</li>
+<li><p><strong>X DO NOT</strong> &#x4E0D;&#x8981;&#x4ECE; <code>Object.Equals</code> &#x65B9;&#x6CD5;&#x4E2D;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x3002;</p>
+</li>
+</ul>
+<h3 id="352-objectgethashcode">3.5.2 Object.GetHashCode</h3>
+<p>&#x5BF9;&#x8C61;&#x7684;&#x8EAB;&#x4EFD;&#x7531;&#x5B83;&#x4EEC;&#x7684;&#x76F8;&#x7B49;&#x8BED;&#x4E49;&#x6765;&#x51B3;&#x5B9A;&#xFF0C;&#x800C;&#x6563;&#x5217;&#x51FD;&#x6570;&#x5219;&#x7528;&#x6765;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x4E0E;&#x5BF9;&#x8C61;&#x7684;&#x8EAB;&#x4EFD;&#x76F8;&#x5BF9;&#x5E94;&#x7684;&#x6570;&#xFF08;&#x6563;&#x5217;&#x7801;&#xFF09;&#x3002;&#x7531;&#x4E8E;&#x6563;&#x5217;&#x7801;&#x4E3A;&#x6563;&#x5217;&#x8868;&#x6240;&#x7528;&#xFF0C;&#x56E0;&#x6B64;&#x7406;&#x89E3;&#x6563;&#x5217;&#x8868;&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x662F;&#x5F88;&#x91CD;&#x8981;&#x7684;&#xFF0C;&#x8FD9;&#x6837;&#x624D;&#x80FD;&#x5F88;&#x597D;&#x5730;&#x5B9E;&#x73B0;&#x6563;&#x5217;&#x51FD;&#x6570;&#x3002;</p>
+<ul>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x8986;&#x76D6;<code>Object.GetHashCode</code> &#x65B9;&#x6CD5;&#xFF0C;&#x5982;&#x679C;&#x8986;&#x76D6;&#x4E86; <code>Object.Equals</code> &#x65B9;&#x6CD5;&#x3002;</p>
+</li>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x786E;&#x4FDD;&#x5BF9;&#x4EFB;&#x4F55;&#x4E24;&#x4E2A;&#x5BF9;&#x8C61;&#x6765;&#x8BF4;&#xFF0C;&#x5982;&#x679C; <code>Object.Equals</code> &#x65B9;&#x6CD5;&#x8FD4;&#x56DE; <code>true</code>&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x4EEC;&#x7684; <code>GetHashCode</code> &#x65B9;&#x6CD5;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x4E5F;&#x5E94;&#x8BE5;&#x76F8;&#x540C;&#x3002;</p>
+</li>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x5C3D;&#x529B;&#x8BA9;&#x7C7B;&#x578B;&#x7684; <code>GetHashCode</code> &#x65B9;&#x6CD5;&#x4EA7;&#x751F;&#x968F;&#x673A;&#x5206;&#x5E03;&#x7684;&#x6563;&#x5217;&#x7801;&#x3002;</p>
+</li>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x786E;&#x4FDD;&#x65E0;&#x8BBA;&#x600E;&#x4E48;&#x66F4;&#x6539;&#x5BF9;&#x8C61;&#xFF0C;<code>GetHashCode</code> &#x90FD;&#x4F1A;&#x8FD4;&#x56DE;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x7684;&#x503C;&#x3002;</p>
+</li>
+<li><p><strong>X AVOID</strong> &#x907F;&#x514D;&#x4ECE; <code>GetHashCode</code> &#x65B9;&#x6CD5;&#x4E2D;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x3002;</p>
+</li>
+</ul>
+<h3 id="353-objecttostring">3.5.3 Object.ToString</h3>
+<p><code>Object.ToString</code> &#x7684;&#x8BBE;&#x8BA1;&#x76EE;&#x7684;&#x662F;&#x4E3A;&#x4E86;&#x7528;&#x6765;&#x663E;&#x793A;&#x548C;&#x8C03;&#x8BD5;&#x3002;&#x7531;&#x4E8E;&#x5176;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x4EC5;&#x4EC5;&#x8FD4;&#x56DE;&#x5BF9;&#x8C61;&#x7684;&#x7C7B;&#x578B;&#x540D;&#xFF0C;&#x56E0;&#x6B64;&#x4E0D;&#x600E;&#x4E48;&#x6709;&#x7528;&#x3002;</p>
+<ul>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x8986;&#x76D6;<code>ToString</code> &#x65B9;&#x6CD5;&#xFF0C;&#x53EA;&#x8981;&#x80FD;&#x8FD4;&#x56DE;&#x65E2;&#x6709;&#x7528;&#xFF0C;&#x53C8;&#x6613;&#x4E8E;&#x8BA9;&#x4EBA;&#x9605;&#x8BFB;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+</li>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x5C3D;&#x91CF;&#x8BA9; <code>ToString</code> &#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x77ED;&#x5C0F;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+</li>
+<li><p><strong>&#x2713; CONSIDER</strong> &#x8003;&#x8651;&#x4E3A;&#x6BCF;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x65E0;&#x4E8C;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+</li>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x4F7F;&#x7528;&#x6613;&#x4E8E;&#x9605;&#x8BFB;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x800C;&#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x867D;&#x7136;&#x72EC;&#x4E00;&#x65E0;&#x4E8C;&#xFF0C;&#x4F46;&#x5374;&#x8BA9;&#x4EBA;&#x65E0;&#x6CD5;&#x7406;&#x89E3;&#x7684; ID&#x3002;</p>
+</li>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x5728;&#x8FD4;&#x56DE;&#x4E0E; culture &#x6709;&#x5173;&#x7684;&#x4FE1;&#x606F;&#x65F6;&#xFF0C;&#x6839;&#x636E;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x7684; culture &#x6765;&#x5BF9;&#x5B57;&#x7B26;&#x4E32;&#x8FDB;&#x884C;&#x683C;&#x5F0F;&#x5316;&#x3002;</p>
+</li>
+<li><p><strong>X DO NOT</strong> &#x4E0D;&#x8981;&#x4ECE; <code>ToString</code> &#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#x6216; <code>null</code>&#x3002;</p>
+</li>
+<li><p><strong>X AVOID</strong> &#x907F;&#x514D;&#x4ECE; <code>ToString</code> &#x65B9;&#x6CD5;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x3002;</p>
+</li>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x786E;&#x4FDD; <code>ToString</code> &#x65B9;&#x6CD5;&#x4E0D;&#x4F1A;&#x4EA7;&#x751F;&#x526F;&#x4F5C;&#x7528;&#x3002;</p>
+</li>
+<li><p><strong>&#x2713; CONSIDER</strong> &#x8003;&#x8651;&#x8BA9; <code>ToString</code> &#x65B9;&#x6CD5;&#x8F93;&#x51FA;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x80FD;&#x591F;&#x4E3A;&#x8BE5;&#x7C7B;&#x578B;&#x7684;&#x89E3;&#x6790;&#x65B9;&#x6CD5;&#x6B63;&#x786E;&#x5730;&#x89E3;&#x6790;&#x3002;</p>
+<pre><code class="lang-cs">  DateTime now = DateTime.Now;
+  DateTime parsed = DateTime.Parse(now.ToString());
+</code></pre>
+</li>
+</ul>
+<h2 id="36-&#x7EDF;&#x4E00;&#x8D44;&#x6E90;&#x6807;&#x8BC6;&#x7B26;-&#xFF08;uri&#xFF09;">3.6 &#x7EDF;&#x4E00;&#x8D44;&#x6E90;&#x6807;&#x8BC6;&#x7B26; &#xFF08;Uri&#xFF09;</h2>
+<ul>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x4F7F;&#x7528; <code>System.Uri</code> &#x6765;&#x8868;&#x793A; URI &#x548C; URL &#x6570;&#x636E;&#x3002;</p>
+<p>  &#x8FD9;&#x9002;&#x7528;&#x4E8E;&#x53C2;&#x6570;&#x3001;&#x5C5E;&#x6027;&#x3001;&#x53CA;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x7C7B;&#x578B;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Navigtor</span>
+  {
+      <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Navigator</span>(<span class="hljs-params">Uri initialLocation</span>)</span>;
+      <span class="hljs-keyword">public</span> Uri CurrentLocation { <span class="hljs-keyword">get</span>; }
+      <span class="hljs-function"><span class="hljs-keyword">public</span> Uri <span class="hljs-title">NavigateTo</span>(<span class="hljs-params">Uri location</span>)</span>;
+  }
+</code></pre>
+<blockquote>
+<p><code>System.Uri</code> &#x4E0D;&#x4EC5;&#x63D0;&#x4F9B;&#x4E86;&#x66F4;&#x591A;&#x8868;&#x793A; URI &#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x800C;&#x4E14;&#x4E5F;&#x66F4;&#x5B89;&#x5168;&#x3002;&#x5927;&#x91CF;&#x7684;&#x4E8B;&#x5B9E;&#x5DF2;&#x7ECF;&#x8BC1;&#x660E;&#xFF0C;&#x7528;&#x7B80;&#x5355;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6765;&#x64CD;&#x63A7;&#x4E0E; URI &#x6709;&#x5173;&#x7684;&#x6570;&#x636E;&#x4F1A;&#x5F15;&#x53D1;&#x8BB8;&#x591A;&#x5B89;&#x5168;&#x6027;&#x548C;&#x6B63;&#x786E;&#x6027;&#x95EE;&#x9898;&#x3002;</p>
+</blockquote>
+</li>
+<li><p><strong>&#x2713; CONSIDER</strong> &#x8003;&#x8651;&#x4E3A;&#x6700;&#x5E38;&#x7528;&#x7684;&#x5E26; <code>System.Uri</code> &#x53C2;&#x6570;&#x7684;&#x6210;&#x5458;&#x63D0;&#x4F9B;&#x57FA;&#x4E8E;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x91CD;&#x8F7D;&#x6210;&#x5458;&#x3002;</p>
+<p>  &#x5982;&#x679C;&#x7ECF;&#x5E38;&#x9700;&#x8981;&#x7528;&#x6237;&#x8F93;&#x5165;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x4F5C;&#x4E3A; URI&#xFF0C;&#x90A3;&#x4E48;&#x4E3A;&#x65B9;&#x4FBF;&#x8D77;&#x89C1;&#xFF0C;&#x5E94;&#x8BE5;&#x8003;&#x8651;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x4EE5;&#x5B57;&#x7B26;&#x4E32;&#x4E3A;&#x53C2;&#x6570;&#x7684;&#x91CD;&#x8F7D;&#x6210;&#x5458;&#x3002;&#x4EE5;&#x5B57;&#x7B26;&#x4E32;&#x4E3A;&#x53C2;&#x6570;&#x7684;&#x91CD;&#x8F7D;&#x6210;&#x5458;&#x5E94;&#x8BE5;&#x901A;&#x8FC7; <code>System.Uri</code> &#x4E3A;&#x53C2;&#x6570;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x5B9E;&#x73B0;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Navigator</span>
+  {
+      <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">NavigateTo</span>(<span class="hljs-params">Uri location</span>)</span>;
+      <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">NavigateTo</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> location</span>)
+      </span>{
+          NavigateTo(<span class="hljs-keyword">new</span> Uri(location));
+      }
+  }
+</code></pre>
+</li>
+<li><p><strong>X DO NOT</strong> &#x4E0D;&#x8981;&#x4E0D;&#x5047;&#x601D;&#x7D22;&#x5730;&#x4E3A;&#x6240;&#x6709;&#x57FA;&#x4E8E; <code>System.Uri</code> &#x7684;&#x6210;&#x5458;&#x63D0;&#x4F9B;&#x57FA;&#x4E8E;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x91CD;&#x8F7D;&#x6210;&#x5458;&#x3002;</p>
+<p>  &#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;&#x66F4;&#x597D;&#x7684;&#x65B9;&#x6CD5;&#x662F;&#x4F7F;&#x7528; <code>System.Uri</code> &#x7684;&#x6210;&#x5458;&#xFF0C;&#x57FA;&#x4E8E;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x91CD;&#x8F7D;&#x6210;&#x5458;&#x53EA;&#x662F;&#x4E00;&#x4E9B;&#x8F85;&#x52A9;&#x6210;&#x5458;&#xFF0C;&#x5176;&#x76EE;&#x7684;&#x662F;&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x6700;&#x5E38;&#x7528;&#x7684;&#x60C5;&#x51B5;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Navigator</span>
+  {
+      <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">NavigateTo</span>(<span class="hljs-params">Uri location</span>)</span>;
+
+      <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">NavigateTo</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> location</span>)
+      </span>{
+          NavigateTo(<span class="hljs-keyword">new</span> Uri(location));
+      }
+
+      <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">NavigateTo</span>(<span class="hljs-params">Uri location, NavigationMode mode</span>)</span>;
+  }
+</code></pre>
+</li>
+<li><p><strong>X DO NOT</strong> &#x4E0D;&#x8981;&#x5728;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x5B58;&#x50A8; URI/URL &#x6570;&#x636E;&#x3002;</p>
+<p>  &#x5982;&#x679C; URI/URL &#x6570;&#x636E;&#x662F;&#x4EE5;&#x5B57;&#x7B26;&#x4E32;&#x5F62;&#x5F0F;&#x8F93;&#x5165;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x5E94;&#x8BE5;&#x5148;&#x628A;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x4E3A; <code>System.Uri</code>&#xFF0C;&#x7136;&#x540E;&#x518D;&#x5B58;&#x50A8;&#x8BE5; <code>System.Uri</code> &#x5B9E;&#x4F8B;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">SomeResoure</span>
+  {
+      <span class="hljs-keyword">private</span> <span class="hljs-keyword">readonly</span> Uri _locaiton;
+
+      <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">SomeResoure</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> location</span>)
+          : <span class="hljs-title">this</span>(<span class="hljs-params">new Uri(location</span>))
+      </span>{
+      }
+
+      <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">SomeResoure</span>(<span class="hljs-params">Uri location</span>)
+      </span>{
+          <span class="hljs-keyword">this</span>._location = location;
+      }
+  }
+</code></pre>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../design-guidelines-for-exceptions/#24-异常与性能" class="navigation navigation-prev " aria-label="Previous page: 2.4 异常与性能">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="./#31-数组（arrays）" class="navigation navigation-next " aria-label="Next page: 3.1 数组（Arrays）">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3 常用类型使用规范","level":"1.3","depth":1,"next":{"title":"3.1 数组（Arrays）","level":"1.3.1","depth":2,"anchor":"#31-数组（arrays）","path":"usage-guidelines/README.md","ref":"usage-guidelines/README.md#31-数组（arrays）","articles":[]},"previous":{"title":"2.4 异常与性能","level":"1.2.4","depth":2,"anchor":"#24-异常与性能","path":"design-guidelines-for-exceptions/README.md","ref":"design-guidelines-for-exceptions/README.md#24-异常与性能","articles":[]},"dir":"ltr"},"config":{"plugins":["-livereload","-sharing","-lunr","-search","search-pro@2.0.2","header-anchorjs@1.1.2","page-toc@1.0.2","expandable-chapters@0.2.0"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search-pro":{},"header-anchorjs":{},"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4"},"expandable-chapters":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"ROY <qqbuby@gmail.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":".NET (C#) 编程指南","language":"en","gitbook":"3.2.3"},"file":{"path":"usage-guidelines/README.md","mtime":"2020-01-20T08:41:05.630Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-20T09:49:38.888Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-header-anchorjs/anchor-js/3.1.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-header-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1058 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>5 代码风格 · .NET (C#) 编程指南</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="ROY <qqbuby@gmail.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="./" />
+    
+    
+    <link rel="prev" href="../dispose-pattern/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    1 命名规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../naming-guidelines/">
+            
+                <a href="../naming-guidelines/#11-大小写约定">
+            
+                    
+                    1.1 大小写约定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../naming-guidelines/">
+            
+                <a href="../naming-guidelines/#12-通用命名约定">
+            
+                    
+                    1.2 通用命名约定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../naming-guidelines/">
+            
+                <a href="../naming-guidelines/#13-程序集和-dll-的命名">
+            
+                    
+                    1.3 程序集和DLL的命名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="../naming-guidelines/">
+            
+                <a href="../naming-guidelines/#14-命名空间的命名">
+            
+                    
+                    1.4 命名空间的命名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="../naming-guidelines/">
+            
+                <a href="../naming-guidelines/#15-类、结构和接口的命名">
+            
+                    
+                    1.5 类、结构和接口的命名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="../naming-guidelines/">
+            
+                <a href="../naming-guidelines/#16-类成员的命名">
+            
+                    
+                    1.6 类成员的命名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7" data-path="../naming-guidelines/">
+            
+                <a href="../naming-guidelines/#17-参数的命名">
+            
+                    
+                    1.7 参数的命名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.8" data-path="../naming-guidelines/">
+            
+                <a href="../naming-guidelines/#18-json-的命名">
+            
+                    
+                    1.8 JSON 的命名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.9" data-path="../naming-guidelines/">
+            
+                <a href="../naming-guidelines/#19-版本号的命名">
+            
+                    
+                    1.9 版本号的命名
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../design-guidelines-for-exceptions/">
+            
+                <a href="../design-guidelines-for-exceptions/">
+            
+                    
+                    2 异常使用规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../design-guidelines-for-exceptions/">
+            
+                <a href="../design-guidelines-for-exceptions/#21-抛出异常">
+            
+                    
+                    2.1 抛出异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../design-guidelines-for-exceptions/">
+            
+                <a href="../design-guidelines-for-exceptions/#22-为抛出的异常选择合适的类型">
+            
+                    
+                    2.2 为抛出的异常选择合适的类型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../design-guidelines-for-exceptions/">
+            
+                <a href="../design-guidelines-for-exceptions/#221-错误消息的设计">
+            
+                    
+                    2.2.1 错误消息的设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../design-guidelines-for-exceptions/">
+            
+                <a href="../design-guidelines-for-exceptions/#222-异常处理">
+            
+                    
+                    2.2.2 异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../design-guidelines-for-exceptions/">
+            
+                <a href="../design-guidelines-for-exceptions/#23-自定义异常的设计">
+            
+                    
+                    2.3 自定义异常的设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../design-guidelines-for-exceptions/">
+            
+                <a href="../design-guidelines-for-exceptions/#24-异常与性能">
+            
+                    
+                    2.4 异常与性能
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../usage-guidelines/">
+            
+                <a href="../usage-guidelines/">
+            
+                    
+                    3 常用类型使用规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../usage-guidelines/">
+            
+                <a href="../usage-guidelines/#31-数组（arrays）">
+            
+                    
+                    3.1 数组（Arrays）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../usage-guidelines/">
+            
+                <a href="../usage-guidelines/#32-标记（attributes）">
+            
+                    
+                    3.2 标记（Attributes）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../usage-guidelines/">
+            
+                <a href="../usage-guidelines/#33-集合（collections）">
+            
+                    
+                    3.3 集合（Collections）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../usage-guidelines/">
+            
+                <a href="../usage-guidelines/#34-icomparablet-与-iequatablet">
+            
+                    
+                    3.4 IComparable&ltT&gt 与 IEquatable&ltT&gt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../usage-guidelines/">
+            
+                <a href="../usage-guidelines/#35-对象（object）">
+            
+                    
+                    3.5 对象（Object）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../usage-guidelines/">
+            
+                <a href="../usage-guidelines/#351-objectequals">
+            
+                    
+                    3.5.1 Object.Equals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="../usage-guidelines/">
+            
+                <a href="../usage-guidelines/#352-objectgethashcode">
+            
+                    
+                    3.5.2 Object.GetHashCode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="../usage-guidelines/">
+            
+                <a href="../usage-guidelines/#353-objecttostring">
+            
+                    
+                    3.5.3 Object.ToString
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../usage-guidelines/">
+            
+                <a href="../usage-guidelines/#36-统一资源标识符-（uri）">
+            
+                    
+                    3.6 统一资源标识符 （Uri）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../dispose-pattern/">
+            
+                <a href="../dispose-pattern/">
+            
+                    
+                    4 Dispose 模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../dispose-pattern/">
+            
+                <a href="../dispose-pattern/#41-基本-dispose-模式">
+            
+                    
+                    4.1 基本 Dispose 模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../dispose-pattern/">
+            
+                <a href="../dispose-pattern/#42-可终结类型">
+            
+                    
+                    4.2 可终结类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    5 代码风格
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="./">
+            
+                <a href="./#51-c-代码风格">
+            
+                    
+                    5.1 代码风格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="./">
+            
+                <a href="./#52-文件结构">
+            
+                    
+                    5.2 文件结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../suggested-reading-list/">
+            
+                <a href="../suggested-reading-list/">
+            
+                    
+                    推荐读物
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >5 代码风格</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="51-c-&#x4EE3;&#x7801;&#x98CE;&#x683C;">5.1 C# &#x4EE3;&#x7801;&#x98CE;&#x683C;</h2>
+<p>&#x6211;&#x4EEC;&#x9075;&#x5FAA;&#x201C;Visual Studio&#x201D; &#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#x4F5C;&#x4E3A;&#x901A;&#x7528;&#x89C4;&#x5219;&#x3002;</p>
+<ul>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x4F7F;&#x7528;<a href="http://en.wikipedia.org/wiki/Indent_style#Allman_style" target="_blank">Allman &#x98CE;&#x683C;</a>&#x5927;&#x62EC;&#x53F7;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x6BCF;&#x4E2A;&#x5927;&#x62EC;&#x53F7;&#x53E6;&#x8D77;&#x4E00;&#x884C;&#x5F00;&#x59CB;&#x3002;</p>
+</li>
+<li><p><strong>X DO NOT</strong> &#x4E0D;&#x8981;&#x5FFD;&#x7565;&#x5355;&#x884C;&#x8BED;&#x53E5;&#x5757;&#x7684;&#x5927;&#x62EC;&#x53F7;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-comment">// bad style</span>
+  <span class="hljs-keyword">if</span> (<span class="hljs-keyword">value</span> == <span class="hljs-keyword">null</span>) <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> ArgumentNullException(nameof(<span class="hljs-keyword">value</span>));
+
+  <span class="hljs-comment">// good style</span>
+  <span class="hljs-keyword">if</span> (<span class="hljs-keyword">value</span> == <span class="hljs-keyword">null</span>)
+  {
+      <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> ArgumentNullException(nameof(<span class="hljs-keyword">value</span>));
+  }
+</code></pre>
+</li>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x4F7F;&#x7528; 4 &#x4E2A;&#x7A7A;&#x683C;&#x8FDB;&#x884C;&#x7F29;&#x8FDB;&#x800C;&#x4E0D;&#x662F;&#x5236;&#x8868;&#x7B26;&#xFF08;tabs&#xFF09;&#x3002;</p>
+<p>  <code>.</code> &#x8868;&#x793A;&#x7A7A;&#x683C;&#xFF0C;<code>-&gt;</code>&#x8868;&#x793A;&#x5236;&#x8868;&#x7B26;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-comment">// bad style</span>
+  <span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+  {
+  -&gt;  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"><span class="hljs-keyword">string</span>[] args</span>)
+  -&gt;  </span>{
+  -&gt;  -&gt;  Console.Write(<span class="hljs-string">&quot;Hello World&quot;</span>);
+  -&gt;  }
+  }
+
+  <span class="hljs-comment">// good style</span>
+  <span class="hljs-keyword">class</span>.<span class="hljs-title">Program</span>
+  {
+  ....<span class="hljs-keyword">static</span>.<span class="hljs-keyword">void</span>.Main(<span class="hljs-keyword">string</span>[].args)
+  ....{
+  ........Console.Write(<span class="hljs-string">&quot;Hello.World&quot;</span>);
+  ....}
+  }
+</code></pre>
+</li>
+<li><p><strong>&#x2713; CONSIDER</strong> &#x8003;&#x8651;&#x4F7F;&#x7528;&#x53EA;&#x8BFB;&#x7684;&#x5C5E;&#x6027;&#x4EE3;&#x66FF;&#x516C;&#x7528;&#x7C7B;&#x578B;&#x7684;&#x5B57;&#x6BB5;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-comment">// bad style</span>
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">readonly</span> <span class="hljs-keyword">int</span> Age = <span class="hljs-number">18</span>;
+
+  <span class="hljs-comment">// good style</span>
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> Age { <span class="hljs-keyword">get</span>; } = <span class="hljs-number">18</span>;
+</code></pre>
+</li>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x5C06;<code>readonly</code>&#x653E;&#x7F6E;&#x5728;<code>static</code>&#x4E4B;&#x540E;&#xFF0C;&#x5F53;&#x4F7F;&#x7528;&#x5230;<code>static</code>&#x5B57;&#x6BB5;&#x65F6;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-comment">// bad style</span>
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">readonly</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> _age = <span class="hljs-number">18</span>;
+
+  <span class="hljs-comment">// good style</span>
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">readonly</span> <span class="hljs-keyword">int</span> _age = <span class="hljs-number">18</span>;
+</code></pre>
+</li>
+<li><p><strong>X AVOID</strong> &#x907F;&#x514D;&#x4F7F;&#x7528;<code>this</code>&#x5173;&#x952E;&#x5B57;&#xFF0C;&#x5982;&#x65E0;&#x7EDD;&#x5BF9;&#x7684;&#x5FC5;&#x8981;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Staff</span>
+  {
+      <span class="hljs-keyword">private</span> <span class="hljs-keyword">readonly</span> <span class="hljs-keyword">int</span> _age;
+
+      <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Staff</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> age</span>)
+      </span>{
+          <span class="hljs-comment">// bad style</span>
+          <span class="hljs-keyword">this</span>._age = age;
+
+          <span class="hljs-comment">// good style</span>
+          _age = age;
+      }
+  }
+</code></pre>
+</li>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x603B;&#x662F;&#x663E;&#x793A;&#x5730;&#x6307;&#x5B9A;&#x53EF;&#x89C1;&#x6027;&#xFF08;visibility&#xFF09;&#x4FEE;&#x9970;&#x7B26;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-comment">// bad style</span>
+  <span class="hljs-keyword">class</span> <span class="hljs-title">Staff</span>
+  {
+      <span class="hljs-keyword">int</span> _age;
+      ...
+  }
+</code></pre>
+<pre><code class="lang-cs">  <span class="hljs-comment">// good style</span>
+  <span class="hljs-keyword">internal</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Staff</span>
+  {
+      <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> _age;
+      ...
+  }
+</code></pre>
+</li>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x5C06;&#x53EF;&#x89C1;&#x6027;&#x4F5C;&#x4E3A;&#x7B2C;&#x4E00;&#x4E2A;&#x4FEE;&#x9970;&#x7B26;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Foobar</span>
+  {
+      <span class="hljs-comment">// bad style</span>
+      <span class="hljs-function"><span class="hljs-keyword">abstract</span> <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">DoBuzz</span>(<span class="hljs-params"></span>)</span>;
+
+      <span class="hljs-comment">// good style</span>
+      <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span>  <span class="hljs-keyword">void</span> <span class="hljs-title">DoBuzz</span>(<span class="hljs-params"></span>)</span>;
+  }
+</code></pre>
+</li>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x5C06;&#x540D;&#x5B57;&#x7A7A;&#x95F4;&#x7684;&#x5BFC;&#x5165;&#x6307;&#x4EE4;&#xFF08;using directives&#xFF09;&#x653E;&#x5728;&#x6587;&#x4EF6;&#x7684;&#x9876;&#x90E8;&#xFF0C;<code>namespace</code> &#x58F0;&#x660E;&#x7684;&#x5916;&#x90E8;&#xFF0C;&#x5E76;&#x5C06;<code>System</code>&#x540D;&#x5B57;&#x7A7A;&#x95F4;&#x4F5C;&#x4E3A;&#x7B2C;&#x4E00;&#x987A;&#x4F4D;&#x6309;&#x5B57;&#x6BCD;&#x987A;&#x5E8F;&#x6392;&#x5E8F;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-keyword">using</span> System;
+  <span class="hljs-keyword">using</span> System.Collections.Generic;
+  <span class="hljs-keyword">using</span> System.Net.Mail;
+  <span class="hljs-keyword">using</span> Alyio.Extensions;
+  <span class="hljs-keyword">using</span> Microsoft.AspNetCore;
+  <span class="hljs-keyword">using</span> Microsoft.Extensions.Configuration;
+
+  <span class="hljs-keyword">namespace</span> <span class="hljs-title">Gridsum.WebDissector</span>
+  {
+  ...
+</code></pre>
+</li>
+<li><p><strong>X AVOID</strong> &#x907F;&#x514D;&#x5728;&#x4EFB;&#x4F55;&#x65F6;&#x5019;&#x4F7F;&#x7528;&#x591A;&#x4E8E;&#x4E00;&#x4E2A;&#x7684;&#x7A7A;&#x884C;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x4E0D;&#x8981;&#x5728;&#x7C7B;&#x578B;&#x6210;&#x5458;&#x4E4B;&#x95F4;&#x4F7F;&#x7528;&#x4E24;&#x4E2A;&#x7A7A;&#x884C;&#x3002;</p>
+<pre><code class="lang-cs">   <span class="hljs-number">1</span> <span class="hljs-comment">// bad style</span>
+   <span class="hljs-number">2</span>  {
+   <span class="hljs-number">3</span>      <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> Bar { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">set</span>; }
+   <span class="hljs-number">4</span>
+   <span class="hljs-number">5</span>
+   <span class="hljs-number">6</span>
+   <span class="hljs-number">7</span>      <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">DoBuz</span>(<span class="hljs-params"></span>)
+   8      </span>{
+   <span class="hljs-number">9</span>          <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+  <span class="hljs-number">10</span>      }
+  <span class="hljs-number">11</span>  }
+</code></pre>
+</li>
+<li><p><strong>X AVOID</strong> &#x907F;&#x514D;&#x4F7F;&#x7528;&#x591A;&#x4F59;&#x7684;&#x7A7A;&#x683C;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-comment">// bad style</span>
+  <span class="hljs-keyword">if</span>.(someVar.==<span class="hljs-number">.0</span>)...
+  {
+</code></pre>
+<blockquote>
+<p>&#x5728; Visual Studio &#x4E2D;&#x542F;&#x7528;&#x201C;View White Space (Ctrl+E, S)&#x201D;&#x8FDB;&#x884C;&#x8F85;&#x52A9;&#x68C0;&#x67E5;&#x3002;</p>
+</blockquote>
+</li>
+<li><p><strong>X AVOID</strong> &#x907F;&#x514D;&#x4F7F;&#x7528; <code>#region</code> &#x9884;&#x5904;&#x7406;&#x6307;&#x4EE4;&#xFF08;preprocessor directives)&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-comment">// bad style</span>
+  <span class="hljs-keyword">class</span> <span class="hljs-title">MyClass</span>
+  {
+      <span class="hljs-meta">#<span class="hljs-meta-keyword">region</span> Constructors</span>
+      <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">MyClass</span>(<span class="hljs-params"></span>) </span>{ ... }
+      <span class="hljs-meta">#<span class="hljs-meta-keyword">endregion</span></span>
+
+      <span class="hljs-meta">#<span class="hljs-meta-keyword">region</span> public Methods</span>
+      <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">DoSomething</span>(<span class="hljs-params"></span>) </span>{ ... }
+      <span class="hljs-meta">#<span class="hljs-meta-keyword">endregion</span></span>
+
+      <span class="hljs-meta">#<span class="hljs-meta-keyword">region</span> Protected Methods</span>
+      <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">virtual</span> <span class="hljs-keyword">void</span> <span class="hljs-title">DoSomethingCore</span>(<span class="hljs-params"></span>) </span>{ ... }
+      <span class="hljs-meta">#<span class="hljs-meta-keyword">endregion</span></span>
+  }
+</code></pre>
+</li>
+<li><p><strong>&#x2713; CONSIDER</strong> &#x8003;&#x8651;&#x5728;&#x53D8;&#x91CF;&#x7C7B;&#x578B;&#x663E;&#x800C;&#x6613;&#x89C1;&#x65F6;&#xFF0C;&#x624D;&#x4F7F;&#x7528; <code>var</code> &#x5173;&#x952E;&#x5B57;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-comment">// bad style</span>
+  <span class="hljs-keyword">var</span> stream = OpenStandardInput();
+
+  <span class="hljs-comment">// good style</span>
+  <span class="hljs-keyword">var</span> stream = <span class="hljs-keyword">new</span> FileStream(...);
+
+  <span class="hljs-comment">// When the type of a variable is not clear from the context, use an</span>
+  <span class="hljs-comment">// explicit type.</span>
+  TextReader stream = OpenStandardInput();
+</code></pre>
+</li>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x5728;&#x7C7B;&#x578B;&#x5F15;&#x7528;&#x548C;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x65F6;&#x4F7F;&#x7528;&#x8BED;&#x8A00;&#x7279;&#x6709;&#x7684;&#x5173;&#x952E;&#x5B57;&#x800C;&#x4E0D;&#x662F; BCL &#x7C7B;&#x578B;&#x3002;</p>
+<p>  &#x4F8B;&#x5982;&#xFF0C;&#x4F7F;&#x7528;<code>int, string, float</code> &#x800C;&#x4E0D;&#x662F; <code>Int32, String, Single</code> &#x7B49;&#x7B49;&#x3002;&#x540C;&#x6837;&#x5730;&#x4F7F;&#x7528; <code>int.Parse</code> &#x800C;&#x4E0D;&#x662F; <code>Int32.Parse</code>&#x3002;</p>
+</li>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x5C3D;&#x53EF;&#x80FD;&#x4F7F;&#x7528;<code>nameof(...)</code>&#x800C;&#x4E0D;&#x662F;<code>&quot;...&quot;</code>&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-comment">// bad style</span>
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">DoSomething</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> someVar</span>)
+  </span>{
+      <span class="hljs-keyword">if</span> (<span class="hljs-keyword">string</span>.IsNullOrEmpty(someVar))
+      {
+          <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> ArgumentNullException(<span class="hljs-string">&quot;someVar&quot;</span>);
+      }
+  }
+</code></pre>
+<pre><code class="lang-cs">  <span class="hljs-comment">// good style</span>
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">DoSomething</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> someVar</span>)
+  </span>{
+      <span class="hljs-keyword">if</span> (<span class="hljs-keyword">string</span>.IsNullOrEmpty(someVar))
+      {
+          <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> ArgumentNullException(nameof(someVar));
+      }
+  }
+</code></pre>
+</li>
+<li><p><strong>&#x2713; CONSIDER</strong> &#x8003;&#x8651;&#x4F7F;&#x7528;&#x5B57;&#x7B26;&#x4E32;&#x63D2;&#x503C;&#xFF08;string interpolation&#xFF09;&#x8FDE;&#x63A5;&#x77ED;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-keyword">string</span> displayName = $<span class="hljs-string">&quot;{nameList[n].LastName}, {nameList[n].FirstName}&quot;</span>;
+</code></pre>
+</li>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x4F7F;&#x7528; <code>System.Text.StringBuilder</code> &#x5BF9;&#x8C61;&#x5728;&#x5FAA;&#x73AF;&#x4E2D;&#x6DFB;&#x52A0;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x5904;&#x7406;&#x5927;&#x91CF;&#x672C;&#x6587;&#x64CD;&#x4F5C;&#x65F6;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-keyword">var</span> phrase = <span class="hljs-string">&quot;banananananananananananananananananananananananana&quot;</span>;
+  <span class="hljs-keyword">var</span> manyPhrases = <span class="hljs-keyword">new</span> StringBuilder();
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>_000; i++)
+  {
+      manyPhrases.Append(phrase);
+  }
+</code></pre>
+</li>
+<li><p><strong>&#x2713; CONSIDER</strong> &#x8003;&#x8651;&#x5728;&#x77ED;&#x5C0F;&#x7684;&#x5C40;&#x90E8;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x4F7F;&#x7528;&#x7B80;&#x77ED;&#x7684;&#x53D8;&#x91CF;&#x540D;&#x3002;</p>
+<p>  &#x5982; <code>i</code>,<code>j</code>,<code>k</code> &#x5728; <code>for</code> &#x5FAA;&#x73AF;&#x4E2D;&#x7684;&#x4F7F;&#x7528;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++) { ... }
+</code></pre>
+<p>  &#x5982; Lambda &#x6216; LINQ &#x4E2D;&#x4F7F;&#x7528; <code>o</code>, <code>p</code>, <code>q</code> &#x7B49;&#x7B49;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-keyword">var</span> staffs = <span class="hljs-keyword">new</span> List&lt;Staff&gt; { ... };
+
+  <span class="hljs-keyword">var</span> someStaffs = staffs.Where(s =&gt; s.Age &lt; <span class="hljs-number">18</span>).ToList();
+</code></pre>
+</li>
+<li><p><strong>&#x2713; CONSIDER</strong> &#x8003;&#x8651;&#x4E3A;&#x516C;&#x7528; API &#x63D0;&#x4F9B;&#x6587;&#x6863;&#x5316;&#x6CE8;&#x91CA;&#x3002;</p>
+<pre><code class="lang-cs">  <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;summary&gt;</span></span>
+  <span class="hljs-comment"><span class="hljs-doctag">///</span> The main <span class="hljs-doctag">&lt;c&gt;</span>Math<span class="hljs-doctag">&lt;/c&gt;</span> class.</span>
+  <span class="hljs-comment"><span class="hljs-doctag">///</span> Contains all methods for performing basic math functions.</span>
+  <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;list type=&quot;bullet&quot;&gt;</span></span>
+  <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;item&gt;</span></span>
+  <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;term&gt;</span>Add<span class="hljs-doctag">&lt;/term&gt;</span></span>
+  <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;description&gt;</span>Addition Operation<span class="hljs-doctag">&lt;/description&gt;</span></span>
+  <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/item&gt;</span></span>
+  <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;item&gt;</span></span>
+  <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;term&gt;</span>Subtract<span class="hljs-doctag">&lt;/term&gt;</span></span>
+  <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;description&gt;</span>Subtraction Operation<span class="hljs-doctag">&lt;/description&gt;</span></span>
+  <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/item&gt;</span></span>
+  <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;item&gt;</span></span>
+  <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;term&gt;</span>Multiply<span class="hljs-doctag">&lt;/term&gt;</span></span>
+  <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;description&gt;</span>Multiplication Operation<span class="hljs-doctag">&lt;/description&gt;</span></span>
+  <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/item&gt;</span></span>
+  <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;item&gt;</span></span>
+  <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;term&gt;</span>Divide<span class="hljs-doctag">&lt;/term&gt;</span></span>
+  <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;description&gt;</span>Division Operation<span class="hljs-doctag">&lt;/description&gt;</span></span>
+  <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/item&gt;</span></span>
+  <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/list&gt;</span></span>
+  <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/summary&gt;</span></span>
+  <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;remarks&gt;</span></span>
+  <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;para&gt;</span>This class can add, subtract, multiply and divide.<span class="hljs-doctag">&lt;/para&gt;</span></span>
+  <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;para&gt;</span>These operations can be performed on both integers and doubles.<span class="hljs-doctag">&lt;/para&gt;</span></span>
+  <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/remarks&gt;</span></span>
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Math</span>
+  {
+      <span class="hljs-comment">// Adds two integers and returns the result</span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;summary&gt;</span></span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> Adds two integers <span class="hljs-doctag">&lt;paramref name=&quot;a&quot;/&gt;</span> and <span class="hljs-doctag">&lt;paramref name=&quot;b&quot;/&gt;</span> and returns the result.</span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/summary&gt;</span></span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;returns&gt;</span></span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> The sum of two integers.</span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/returns&gt;</span></span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;example&gt;</span></span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;code&gt;</span></span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> int c = Math.Add(4, 5);</span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> if (c &gt; 10)</span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> {</span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span>     Console.WriteLine(c);</span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> }</span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/code&gt;</span></span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/example&gt;</span></span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;exception cref=&quot;System.OverflowException&quot;&gt;</span>Thrown when one parameter is max </span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> and the other is greater than 0.<span class="hljs-doctag">&lt;/exception&gt;</span></span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> See <span class="hljs-doctag">&lt;see cref=&quot;Math.Add(double, double)&quot;/&gt;</span> to add doubles.</span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;seealso cref=&quot;Math.Subtract(int, int)&quot;/&gt;</span></span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;seealso cref=&quot;Math.Multiply(int, int)&quot;/&gt;</span></span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;seealso cref=&quot;Math.Divide(int, int)&quot;/&gt;</span></span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;param name=&quot;a&quot;&gt;</span>An integer.<span class="hljs-doctag">&lt;/param&gt;</span></span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;param name=&quot;b&quot;&gt;</span>An integer.<span class="hljs-doctag">&lt;/param&gt;</span></span>
+      <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">Add</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> a, <span class="hljs-keyword">int</span> b</span>)
+      </span>{
+          <span class="hljs-comment">// If any parameter is equal to the max value of an integer</span>
+          <span class="hljs-comment">// and the other is greater than zero</span>
+          <span class="hljs-keyword">if</span> ((a == <span class="hljs-keyword">int</span>.MaxValue &amp;&amp; b &gt; <span class="hljs-number">0</span>) || (b == <span class="hljs-keyword">int</span>.MaxValue &amp;&amp; a &gt; <span class="hljs-number">0</span>))
+              <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> System.OverflowException();
+
+          <span class="hljs-keyword">return</span> a + b;
+      }
+
+      ...
+
+      <span class="hljs-comment">// Divides a double by another and returns the result</span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;summary&gt;</span></span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> Divides a double <span class="hljs-doctag">&lt;paramref name=&quot;a&quot;/&gt;</span> by another double <span class="hljs-doctag">&lt;paramref name=&quot;b&quot;/&gt;</span> and returns the result.</span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/summary&gt;</span></span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;returns&gt;</span></span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> The quotient of two doubles.</span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/returns&gt;</span></span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;example&gt;</span></span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;code&gt;</span></span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> double c = Math.Divide(4.5, 5.4);</span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> if (c &gt; 1.0)</span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> {</span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span>     Console.WriteLine(c);</span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> }</span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/code&gt;</span></span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/example&gt;</span></span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;exception cref=&quot;System.DivideByZeroException&quot;&gt;</span>Thrown when <span class="hljs-doctag">&lt;paramref name=&quot;b&quot;/&gt;</span> is equal to 0.<span class="hljs-doctag">&lt;/exception&gt;</span></span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> See <span class="hljs-doctag">&lt;see cref=&quot;Math.Divide(int, int)&quot;/&gt;</span> to divide integers.</span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;seealso cref=&quot;Math.Add(double, double)&quot;/&gt;</span></span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;seealso cref=&quot;Math.Subtract(double, double)&quot;/&gt;</span></span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;seealso cref=&quot;Math.Multiply(double, double)&quot;/&gt;</span></span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;param name=&quot;a&quot;&gt;</span>A double precision dividend.<span class="hljs-doctag">&lt;/param&gt;</span></span>
+      <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;param name=&quot;b&quot;&gt;</span>A double precision divisor.<span class="hljs-doctag">&lt;/param&gt;</span></span>
+      <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span> <span class="hljs-title">Divide</span>(<span class="hljs-params"><span class="hljs-keyword">double</span> a, <span class="hljs-keyword">double</span> b</span>)
+      </span>{
+          <span class="hljs-keyword">return</span> a / b;
+      }
+  }
+</code></pre>
+</li>
+</ul>
+<h2 id="52-&#x6587;&#x4EF6;&#x7ED3;&#x6784;">5.2 &#x6587;&#x4EF6;&#x7ED3;&#x6784;</h2>
+<ul>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x5728;&#x9879;&#x76EE;&#x7684; repository &#x7684;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA; <code>*.sln</code> &#x548C; <code>.gitignore</code> &#x6587;&#x4EF6;&#x4EE5;&#x53CA; <code>src</code> &#x548C; <code>test</code> &#x76EE;&#x5F55;&#x3002;</p>
+<p>  &#x987E;&#x540D;&#x601D;&#x4E49;&#xFF0C;<code>src</code> &#x5305;&#x542B;&#x5DE5;&#x7A0B;/&#x4EA7;&#x54C1;&#x7684;&#x6E90;&#x7801;&#x9879;&#x76EE;&#x6587;&#x4EF6;&#xFF0C;<code>test</code> &#x5305;&#x542B;&#x6D4B;&#x8BD5;&#x9879;&#x76EE;&#x6587;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-sh">  $ tree -L 3 <span class="hljs-_">-a</span> -I <span class="hljs-string">&apos;.git&apos;</span> github.com/qqbuby/Alyio.AspNetCore.ApiMessages/
+  github.com/qqbuby/Alyio.AspNetCore.ApiMessages/
+  &#x251C;&#x2500;&#x2500; Alyio.AspNetCore.ApiMessages.sln
+  &#x251C;&#x2500;&#x2500; .gitignore
+  &#x251C;&#x2500;&#x2500; LICENSE
+  &#x251C;&#x2500;&#x2500; nuget.config
+  &#x251C;&#x2500;&#x2500; README.md
+  &#x251C;&#x2500;&#x2500; src
+  &#x2502;   &#x2514;&#x2500;&#x2500; Alyio.AspNetCore.ApiMessages
+  &#x2502;       &#x251C;&#x2500;&#x2500; Alyio.AspNetCore.ApiMessages.csproj
+  &#x2502;       &#x251C;&#x2500;&#x2500; ApiMessageHandlerMiddleware.cs
+  &#x2502;       &#x251C;&#x2500;&#x2500; ExceptionHandler.cs
+  &#x2502;       &#x251C;&#x2500;&#x2500; Extensions
+  &#x2502;       &#x251C;&#x2500;&#x2500; Filters
+  &#x2502;       &#x251C;&#x2500;&#x2500; Messages
+  &#x2502;       &#x251C;&#x2500;&#x2500; XMessage.Designer.cs
+  &#x2502;       &#x2514;&#x2500;&#x2500; XMessage.resx
+  &#x251C;&#x2500;&#x2500; <span class="hljs-built_in">test</span>
+  &#x2502;   &#x251C;&#x2500;&#x2500; Alyio.AspNetCore.ApiMessages.Tests
+  &#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; Alyio.AspNetCore.ApiMessages.Tests.csproj
+  &#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; ApiMessageTests.cs
+  &#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; ExceptionResultHandlerMiddlewareTests.cs
+  &#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; .gitignore
+  &#x2502;   &#x2514;&#x2500;&#x2500; Samples
+  &#x2502;       &#x2514;&#x2500;&#x2500; WebApplication1
+  &#x2514;&#x2500;&#x2500; .travis.yml
+
+  9 directories, 15 files
+</code></pre>
+</li>
+<li><p><strong>&#x2713; DO</strong> &#x8981;&#x5728;&#x5DE5;&#x7A0B;&#x6587;&#x4EF6;&#x7684;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x6DFB;&#x52A0; <a href="https://raw.githubusercontent.com/github/gitignore/master/VisualStudio.gitignore" target="_blank">.gitignore</a> &#x6587;&#x4EF6;&#x3002;</p>
+<p>  GitHub &#x4E0B;&#x8F7D;&#x94FE;&#x63A5;&#xFF1A;<a href="https://raw.githubusercontent.com/github/gitignore/master/VisualStudio.gitignore" target="_blank">https://raw.githubusercontent.com/github/gitignore/master/VisualStudio.gitignore</a>&#x3002;</p>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../dispose-pattern/#42-可终结类型" class="navigation navigation-prev " aria-label="Previous page: 4.2 可终结类型">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="./#51-c-代码风格" class="navigation navigation-next " aria-label="Next page: 5.1 代码风格">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"5 代码风格","level":"1.5","depth":1,"next":{"title":"5.1 代码风格","level":"1.5.1","depth":2,"anchor":"#51-c-代码风格","path":"coding-style/README.md","ref":"coding-style/README.md#51-c-代码风格","articles":[]},"previous":{"title":"4.2 可终结类型","level":"1.4.2","depth":2,"anchor":"#42-可终结类型","path":"dispose-pattern/README.md","ref":"dispose-pattern/README.md#42-可终结类型","articles":[]},"dir":"ltr"},"config":{"plugins":["-livereload","-sharing","-lunr","-search","search-pro@2.0.2","header-anchorjs@1.1.2","page-toc@1.0.2","expandable-chapters@0.2.0"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search-pro":{},"header-anchorjs":{},"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4"},"expandable-chapters":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"ROY <qqbuby@gmail.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":".NET (C#) 编程指南","language":"en","gitbook":"3.2.3"},"file":{"path":"coding-style/README.md","mtime":"2020-01-20T09:23:43.221Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-20T09:49:38.888Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-header-anchorjs/anchor-js/3.1.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-header-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
