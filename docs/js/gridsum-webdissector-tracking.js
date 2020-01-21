@@ -1,5 +1,5 @@
 <!-- Gridsum tracking code begin. -->
-<script type='text/javascript'>
+// <script type='text/javascript'>
 var _gsq = _gsq || [];
     (function () {
         var s = document.createElement('script');
@@ -9,5 +9,5 @@ var _gsq = _gsq || [];
         var firstScript = document.getElementsByTagName('script')[0];
         firstScript.parentNode.insertBefore(s, firstScript);
     })();
-</script>
+// </script>
 <!--Gridsum tracking code end. -->
