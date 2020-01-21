@@ -1,4 +1,3 @@
-{% if jekyll.environment == "production" %}
 <!-- Gridsum tracking code begin. -->
 <script type='text/javascript'>
 var _gsq = _gsq || [];
@@ -12,4 +11,3 @@ var _gsq = _gsq || [];
     })();
 </script>
 <!--Gridsum tracking code end. -->
-{% endif %}
