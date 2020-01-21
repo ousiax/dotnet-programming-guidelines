@@ -1,0 +1,28 @@
+{
+  "title": ".NET (C#) 编程指南",
+  "root": "./docs",
+  "author": "ROY <qqbuby@gmail.com>",
+  "language": "en",
+
+  "gitbook": "3.2.3",
+
+  "plugins": [
+    "-livereload",
+    "-sharing",
+    "-lunr",
+    "-search",
+    "search-pro@2.0.2",
+    "header-anchorjs@1.1.2",
+    "page-toc@1.0.2",
+    "expandable-chapters@0.2.0",
+	"scripts@1.0.2"
+  ],
+  "pluginsConfig": {
+	"scripts": {
+	  "files": [
+		"./js/google-analytics-tracking.js",
+		"./js/gridsum-webdissector-tracking.js"
+	  ]
+	}
+  }
+}
