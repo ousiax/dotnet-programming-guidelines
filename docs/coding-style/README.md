@@ -353,34 +353,36 @@
     顾名思义，`src` 包含工程/产品的源码项目文件，`test` 包含测试项目文件。
 
     ```sh
-    $ tree -L 3 -a -I '.git' github.com/qqbuby/Alyio.AspNetCore.ApiMessages/
+    $ tree -a -I '.git' -L 3 github.com/qqbuby/Alyio.AspNetCore.ApiMessages/
     github.com/qqbuby/Alyio.AspNetCore.ApiMessages/
-    ├── Alyio.AspNetCore.ApiMessages.sln
-    ├── .gitignore
-    ├── LICENSE
-    ├── nuget.config
-    ├── README.md
-    ├── src
-    │   └── Alyio.AspNetCore.ApiMessages
-    │       ├── Alyio.AspNetCore.ApiMessages.csproj
-    │       ├── ApiMessageHandlerMiddleware.cs
-    │       ├── ExceptionHandler.cs
-    │       ├── Extensions
-    │       ├── Filters
-    │       ├── Messages
-    │       ├── XMessage.Designer.cs
-    │       └── XMessage.resx
-    ├── test
-    │   ├── Alyio.AspNetCore.ApiMessages.Tests
-    │   │   ├── Alyio.AspNetCore.ApiMessages.Tests.csproj
-    │   │   ├── ApiMessageTests.cs
-    │   │   ├── ExceptionResultHandlerMiddlewareTests.cs
-    │   │   └── .gitignore
-    │   └── Samples
-    │       └── WebApplication1
-    └── .travis.yml
+    |-- .github
+    |   `-- workflows
+    |       `-- ci.yml
+    |-- .gitignore
+    |-- Alyio.AspNetCore.ApiMessages.sln
+    |-- LICENSE
+    |-- README.md
+    |-- nuget.config
+    |-- src
+    |   `-- Alyio.AspNetCore.ApiMessages
+    |       |-- Alyio.AspNetCore.ApiMessages.csproj
+    |       |-- ApiMessageHandlerMiddleware.cs
+    |       |-- ExceptionHandler.cs
+    |       |-- Extensions
+    |       |-- Filters
+    |       |-- Messages
+    |       |-- XMessage.Designer.cs
+    |       `-- XMessage.resx
+    `-- test
+        |-- Alyio.AspNetCore.ApiMessages.Tests
+        |   |-- .gitignore
+        |   |-- Alyio.AspNetCore.ApiMessages.Tests.csproj
+        |   `-- ExceptionResultHandlerMiddlewareTests.cs
+        `-- Samples
+            |-- WebApiMessages.Samples
+            `-- WebApiMessages.Samples.Tests
     
-    9 directories, 15 files
+    12 directories, 14 files
     ```
 
 - **✓ DO** 要在工程文件的根目录下添加 [.gitignore](https://raw.githubusercontent.com/github/gitignore/master/VisualStudio.gitignore) 文件。
