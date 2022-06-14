@@ -385,4 +385,11 @@
 
 - **✓ DO** 要在工程文件的根目录下添加 [.gitignore](https://raw.githubusercontent.com/github/gitignore/master/VisualStudio.gitignore) 文件。
 
+    ```console
+    # Creates a gitignore file for a dotnet project.
+    $ dotnet new gitignore
+    ```
+
+    或者
+
     GitHub 下载链接：[https://raw.githubusercontent.com/github/gitignore/master/VisualStudio.gitignore](https://raw.githubusercontent.com/github/gitignore/master/VisualStudio.gitignore)。
